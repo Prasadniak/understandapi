@@ -1,0 +1,36 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+body{
+    background: #FFEEEE;
+    background: -webkit-linear-gradient(to left, #FFEEEE , #DDEFBB);
+    background: linear-gradient(to left, #FFEEEE , #DDEFBB);
+    
+}
+
+.alert-notice {
+  color: #000000;
+  background-color: #FFFFFF;
+  //border-color: #faebcc;
+}
+
+.col-md-9{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-3{
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+div {
+    display: block;
+}

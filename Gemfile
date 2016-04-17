@@ -9,6 +9,21 @@ gem 'sqlite3'
 #Use unirest
 gem 'unirest', '~> 1.1', '>= 1.1.2'
 
+# Use bootstrap library for styles
+gem 'bootstrap-sass', '~> 3.3.5'
+
+# Use open-nlp
+#gem 'stanford-core-nlp', '~> 0.5.1'
+
+gem 'java', '~> 0.0.2'
+
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+
+# Use aylien api
+gem 'aylien_text_api', '~> 0.5.1'
+
+# Use font awesomeness for look up
+gem 'font-awesome-sass', '4.2.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

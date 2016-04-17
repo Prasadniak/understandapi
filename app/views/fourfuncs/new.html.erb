@@ -1,0 +1,45 @@
+
+<div class="row">
+  <div class="col-md-9 col-md-push-3">
+        
+        <h1 class="text-center">Enter your Text, URL or article for analysis</h1>
+          <div class="well">
+            <%= form_for @fourfunc do |f| %>
+              <div class="form-group">
+                <%= f.label :'Enter here' %>
+                <%= f.text_area :content, class: 'form-control' %>
+              </div>
+              <%= f.submit 'Analyze', class: 'btn btn-default' %>
+            <% end %>
+          </div>
+          
+        <% flash.each do |key, value| %>
+        <h1 class="text-center">Your result</h1>
+            <div class="well">
+                <%= content_tag :div, value, class: "#{key}" %>
+            </div>
+        <% end %>   
+        
+  </div>         
+  
+  <div class="col-md-3 col-md-pull-9">
+    <br>
+    <br>
+   <h2 class="text-center">Select your type</h2></h2>
+    <br>
+    <div class="list-group">
+      <%= link_to "Sentiment Analysis", new_sentiment_path, class:"list-group-item" %>
+      <%= link_to "Article Extraction", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Concept Extraction", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Entity Extraction", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Summarization", new_summarization_path, class:"list-group-item" %>
+      <%= link_to "Classification", new_classification_path, class:"list-group-item" %>
+      <%= link_to "Classification by Taxanomy", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Semantic Labeling", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Related Phrases", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Language Detection", new_fourfunc_path, class:"list-group-item" %>
+      <%= link_to "Part-of-Speech", new_fourfunc_path, class:"list-group-item" %>
+    </div>
+  </div>
+  
+</div>   
